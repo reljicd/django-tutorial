@@ -22,3 +22,11 @@ If you want to change the server’s IP, pass it along with the port. For exampl
 $ python manage.py runserver 0:8000
 ```
 **0** is a shortcut for **0.0.0.0**. Full docs for the development server can be found in the runserver reference.
+
+## Django admin
+
+Admin credentials:
+
+username: **admin**
+
+password: **adminpassword**
