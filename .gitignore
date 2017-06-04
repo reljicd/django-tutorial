@@ -36,3 +36,6 @@ pyvenv.cfg
 .venv
 pip-selfcheck.json
 tcl
+
+# SQLite
+*db.sqlite3
