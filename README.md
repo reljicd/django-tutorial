@@ -2,11 +2,32 @@
 
 Following Django tutorial from [Django website](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
 
+## Virtual Environment
+
+Make virtual environment in root of the project with:
+```
+python3 -m venv virtual-env
+```
+Activate it with:
+```
+source virtual-env/bin/activate
+```
+Install Requirements with:
+```
+pip3 install -r requirements.txt
+```
+
+## Database setup
+You need to be in **mysite** folder for this command:
+```
+python3 manage.py migrate
+```
+
 ## The development server
 
-Change into the outer mysite directory, if you haven’t already, and run the following commands:
+You need to be in **mysite** folder for this command:
 ```
-$ python manage.py runserver
+$ python3 manage.py runserver
 ```
 
 ### Changing the port
@@ -15,11 +36,11 @@ By default, the runserver command starts the development server on the internal 
 
 If you want to change the server’s port, pass it as a command-line argument. For instance, this command starts the server on port 8080:
 ```
-$ python manage.py runserver 8080
+$ python3 manage.py runserver 8080
 ```
 If you want to change the server’s IP, pass it along with the port. For example, to listen on all available public IPs (which is useful if you are running Vagrant or want to show off your work on other computers on the network), use:
 ```
-$ python manage.py runserver 0:8000
+$ python3 manage.py runserver 0:8000
 ```
 **0** is a shortcut for **0.0.0.0**. Full docs for the development server can be found in the runserver reference.
 
@@ -30,3 +51,4 @@ Admin credentials:
 username: **admin**
 
 password: **adminpassword**
+
